@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container col-md-12">
+        <div class="row">
+            <div class="jumbotron title col-md-4">
+                <h1>Crystal Collector</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="jumbotron col-md-6">
+                <div id="instructions">
+                    <p>
+                        You will be given a random number at the start of the game.
+                    </p>
+                    <p>
+                        There are four crystals below. By clicking the crystal you will add a specific amount of points
+                        to your
+                        total score.
+                    </p>
+                    <p>
+                        You win the game by matching your total score to a random number, and you lose the game if your
+                        total
+                        score goes above the random number.
+                    </p>
+                    <p>
+                        The value of each crystal is hidden from you until you click on it.
+                    </p>
+                    <p>
+                        Each time the game starts, the target number and the values of each crystal will change.
+                    </p>
+                    <p>
+                        Good luck.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="jumbotron col-md-4">
+                <h1 id="randomNumber">???</h1>
+            </div>
+            <div class="jumbotron col-md-2">
+                <h3 id="result"></h3><br>
+                <h3>Wins: </h3><h3 id="wins"></h3>
+                <h3>Losses:</h3><h3 id="losses"></h3>
+            </div>
+        </div>
+        <div class="row crystals">
+            <div class="jumbotron crystal col-md-2" id="diamond"><img src="assets/images/diamond.png"></div>
+            <div class="jumbotron crystal col-md-2" id="emerald"><img src="assets/images/emerald.png"></div>
+            <div class="jumbotron crystal col-md-2" id="lapis"><img src="assets/images/lapis.png"></div>
+            <div class="jumbotron crystal col-md-2" id="redstone"><img src="assets/images/redstone.png"></div>
+        </div>
+        <div class="row">
+            <div class="jumbotron col-md-4">
+                <h3>
+                    Current Score:
+                </h3>
+                <h3 id="currentScore"></h3>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+</body>
+
+
+
+
+
+</html>

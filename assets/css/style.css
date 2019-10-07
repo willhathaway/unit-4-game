@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+.container {
+    background-color: rgb(56, 179, 179);
+}
+
+.jumbotron {
+    background: seashell;
+    margin: 10px 10px 0px 10px;
+    padding: 5em inherit;
+}
+
+.title {
+    background: seashell;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#instructions {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
