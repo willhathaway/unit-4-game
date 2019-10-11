@@ -23,6 +23,10 @@ h3 {
 
 }
 
+button {
+    font-family: 'Montserrat', sans-serif;
+}
+
 #instructions {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
