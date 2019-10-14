@@ -10,14 +10,19 @@ $(document).ready(function () {
     let wins = 0;
     let losses = 0;
     let score = 0;
-
     let values = [targetNumber, diamond, emerald, lapis, redstone]
+
+    //console log the values of each crystal and the random target number:
 
     for (let i = 0; i < values.length; i++){
         console.log(values[i]);
     }
 
+    //assign the random target number to the html #randomNumber div:
+
     $('#randomNumber').text(targetNumber);
+
+    //new game function, called when the player wins or loses:
 
     function newGame() {
         targetNumber = Math.floor(Math.random() * 120) + 19;
@@ -35,6 +40,8 @@ $(document).ready(function () {
         }
         
     };
+
+    //assigning the values of the crystals to their respective html elements:
 
     $("#diamond").click(function () {
         score = score + diamond;
@@ -56,6 +63,8 @@ $(document).ready(function () {
         $('#currentScore').text(score);
         console.log('score: ' + score);
     });
+
+    //function checking whether the player has won or lost, called each time player clicks a crystal:
 
     $('.crystal').click(function () {
 
